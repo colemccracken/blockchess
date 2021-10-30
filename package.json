@@ -1,0 +1,39 @@
+{
+  "name": "blockchess",
+  "version": "1.0.0",
+  "description": "A global game of chess on the blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colemccracken/blockchess.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colemccracken/blockchess/issues"
+  },
+  "homepage": "https://github.com/colemccracken/blockchess#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.7",
+    "@nomiclabs/hardhat-solhint": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@typechain/ethers-v5": "^8.0.0",
+    "@typechain/hardhat": "^3.0.0",
+    "@types/jest": "^27.0.2",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.6.7",
+    "ts-node": "^10.4.0",
+    "typechain": "^6.0.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2"
+  }
+}
