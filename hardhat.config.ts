@@ -4,9 +4,9 @@ import '@typechain/hardhat'
 import '@nomiclabs/hardhat-ethers'
 import '@nomiclabs/hardhat-waffle'
 import "@nomiclabs/hardhat-etherscan";
+import dotenv from "dotenv";
 
-
-const ROPSTEN_PRIVATE_KEY = "fc588fb87e0711c7363158c559584ab9319406faeb9e4ea1eeee69ad72e9f8c1";
+dotenv.config()
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -25,14 +25,13 @@ export default {
   solidity: "0.8.9",
   networks: {
     ropsten: {
-      url: `https://eth-ropsten.alchemyapi.io/v2/z0zfeejhEgS6CtJvabLzhZaVChQAkk-B`,
-      accounts: [`0x${ROPSTEN_PRIVATE_KEY}`]
+      url: process.env.ALCHEMY_URL,
+      accounts: [`0x${process.env.ROPSTEN_PRIVATE_KEY}`]
     }
   },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: "AWXE1YD748KNU1AF17XC4JYQT4IK12QHMW"
+    apiKey: process.env.ETHERSCAN_API_KEY
   }
-
 };
